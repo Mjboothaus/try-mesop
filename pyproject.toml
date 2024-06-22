@@ -1,0 +1,23 @@
+[project]
+name = "try-mesop"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Michael Booth", email = "michael@databooth.com.au"},
+]
+dependencies = [
+    "mesop>=0.9.1",
+    "duckdb>=1.0.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "Apache 2"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "black[jupyter]>=24.4.2",
+]
